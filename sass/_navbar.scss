@@ -1,0 +1,48 @@
+.navbar{
+  width: 15%;
+  height: $navbarHeight;
+  padding-top: $basePadding;
+  @media screen and(max-width: 1024px){
+    width: 20%;
+  }
+  @media screen and(max-width: 414px){
+    width: 30%;
+    margin-left: $baseMargin;
+  }
+  img{
+    width: 55%;
+    height: 60%;
+  }
+  &-right{
+    width: 40%;
+    height: $navbarHeight;
+    line-height: $navbarHeight;
+    display: flex;
+    @media screen and(max-width: 1024px){
+      width: 80%;
+    }
+    @media screen and(max-width: 414px){
+      display: none;
+    }
+    .items{
+      width: calc(100% / 5);
+      height: $navbarHeight;
+      font-size: 14px;
+      font-weight: 400;
+      text-align: center;
+      i{
+        @media screen and(max-width: 1024px){
+          display: none;
+        }
+      }
+      li{
+        list-style: none;
+        color: $brandColor;
+        display: inline-block;
+        &:hover{
+          color: $colorHover;
+        }
+      }
+    }
+  }
+}
